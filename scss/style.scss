@@ -1,0 +1,251 @@
+@use 'nullstyle';
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300;500&family=Rubik+Marker+Hatch&display=swap');
+
+body {
+	background:url(/img/wpapers_ru_Горы-у-озера.jpg);
+	height: 100%;
+
+}
+
+.wrapper {
+	flex-direction: column;
+	min-height: 100%;
+	overflow-x: hidden;
+	overflow-y: hidden;
+}
+
+
+.sticky {position: sticky;
+	max-width: 1050px;
+	margin: 0 auto;
+	top: 0;
+	font-family: "Rubik Marker Hatch";
+	background-color: rgba(38, 47, 231, 0.3);
+	color: #fff;
+	text-align: center;
+	line-height: 50px;
+	font-size: 36px;
+	font-weight: normal;
+	letter-spacing: 7px;
+	word-spacing: 20px;
+}
+.container {
+	max-width: 1050px;
+	margin: 0 auto;
+	background-color:rgba(200, 218, 222, 0.5) ;
+}
+h1 {
+		text-shadow: 2px 2px 6px;
+	text-align: center;
+	font-size: 34px;
+	font-weight: 600;
+	letter-spacing: 3px;
+}
+
+.my { 
+	display: flex;
+	flex-direction: column;
+font-family: 'Roboto Slab', serif;
+margin: 0px 0px 0px 0px;
+padding: 30px 0px 20px 0px;
+	// .my_profile-title
+
+	&_profile-title {
+		
+		text-align: center;
+		font-size: 34px;
+		font-weight: 600;
+		letter-spacing: 3px;
+	}
+
+
+	// .my__profile-body
+
+	&__profile-body {display: flex;
+		gap: 10px;
+	padding: 20px 0px 0px 0px;
+}
+
+	// .my__profile-img
+
+	&__profile-img {
+		flex: 0 1 50%;
+		justify-content: center;
+		img {
+			border-radius: 20px;
+			height: 700px;
+		margin: 15px 0px 0px 0px;}
+
+	}
+
+	// .my__profile-text
+
+	&__profile-text {
+		display: flex;
+		flex-direction: column;
+font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+		&:last-child {gap: 60px;}
+		H2 {font-size: 28px;
+		font-weight: 650;
+	padding: 0px 20px 10px 0px;
+letter-spacing: 2px;}
+				flex: 0 0 50%;
+					text-align-last: center;
+					font-size: 24px;
+					font-weight: 350;
+					color:rgb(20, 20, 15);
+					padding: 20px 20px 0px 0px;
+					
+	}
+}
+.button {
+	height: 30px;
+	width: 150px;
+	align-self: center;
+	justify-content: flex-end;
+	font-size: 22px;
+	color: rgb(43, 79, 43);
+	box-shadow: 4px 4px 4px;
+	text-decoration: none;
+	a {
+		text-decoration: none;
+	color: #196b13;}
+	
+color: #155111;
+}
+
+				//!---------------2ая страница--------------------//
+.content {
+	padding: 0px 0px 0px 0px;
+display: flex;
+flex-direction: column;
+justify-content: center;
+	// .content__title
+
+	&__title {
+		padding: 30px 0px 0px 0px;
+		h2 {
+	text-shadow: 2px 2px 4px ;
+	font-size: 28px;
+	font-weight: 550;
+	letter-spacing: 2px;
+	text-align: center;
+		}
+	}
+
+	// .content__list
+
+	&__list {
+		li {
+		font-style: italic;
+		font-size: 22px;
+		padding: 20px 0px 0px 0px;
+		&:last-child {padding: 20px 0px 30px 0px;}
+		&::before {
+		content: "";
+		display: inline-block;
+		top: 0px;
+		left:0px;
+		height: 15px;
+		width: 15px;
+		background-color: rgb(41, 135, 144);
+		border-radius: 50%;
+		border: 4px solid white;
+		margin: 0px 10px 0px 0px;
+	}
+}
+}
+}
+
+.jobs {}
+
+.content-hobby {
+
+	// .content-hobby__title
+
+	&__title {
+		h2 {
+	text-shadow: 2px 2px 4px;
+	font-size: 28px;
+	font-weight: 550;
+	letter-spacing: 2px;
+	text-align: center;
+		}
+	}
+
+	// .content-hobby__list
+
+	&__list {
+			li {
+				font-style: italic;
+				font-size: 22px;
+				padding: 20px 0px 0px 0px;
+				&:last-child 
+				{
+				padding: 20px 0px 30px 0px;
+				}
+				&::before 
+				{
+					content: "";
+					display: inline-block;
+					top: 0px;
+					left: 0px;
+					height: 15px;
+					width: 15px;
+					background-color: rgb(41, 135, 144);
+					border-radius: 50%;
+					border: 4px solid white;
+					margin: 0px 10px 0px 0px;
+				}
+			}
+		}
+	}
+
+.content-skills {
+
+	// .content-skills__title
+
+	&__title {
+		h2 {
+	text-shadow: 2px 2px 4px;
+	font-size: 28px;
+	font-weight: 550;
+	letter-spacing: 2px;
+	text-align: center;
+		}
+	}
+
+	// .content-skills__list
+&__list {
+	li {
+		font-style: italic;
+		font-size: 22px;
+		padding: 20px 0px 0px 0px;
+
+		&::before {
+			content: "";
+			display: inline-block;
+			top: 0px;
+			left: 0px;
+			height: 15px;
+			width: 15px;
+			background-color: rgb(41, 135, 144);
+			border-radius: 50%;
+			border: 4px solid white;
+			margin: 0px 10px 0px 0px;
+		}
+	}
+}
+}
+.footer {
+	font-family: "Rubik Marker Hatch";
+		background-color: rgba(38, 47, 231, 0.3);
+		color: #fff;
+		text-align: center;
+		line-height: 50px;
+		font-size: 36px;
+		font-weight: normal;
+		letter-spacing: 7px;
+		word-spacing: 20px;
+
+}

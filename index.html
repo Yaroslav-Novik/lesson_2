@@ -5,84 +5,53 @@
 <html lang="uk">
 
 <head>
+
+	<link rel="stylesheet" href="css/style.css">
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>lesson_1-html_main_tags</title>
+	<title>lesson_2_html_main_tags</title>
 </head>
 
 <body>
+
+	<!-- Липкий header -->
+	<header class='sticky'>Yaroslav Novik</header>
+
+	<!-- Оболочка -->
 	<div class="wrapper">
 		<div class="container">
-			<header>
-<h1></h1>
-			</header>
 			<main>
-
-						Greetings, my name is Yaroslav, I am 33 years old. I was born in Kharkiv in 1990 year. I moved to
-						Bulgaria when I was 4
-						years old and lived there until I was 11 years. then I returned to Ukraine and was forced to repeat
-						the year of school,
-						because of the language barrier.
-						<p></p>
-
+				<div class='my'>
+					<div class="my__profile-title">
+						<h1>My profile</h1>
+					</div>
+					<!-- Общий блок о себе -->
+					<div class="my__profile-body">
+						<div class="my__profile-img">
+							<img src="/img/main2.jpg" alt="">
+						</div>
+						<div class="my__profile-text">
+							<h2>About me</h2>
+							Greetings, my name is Yaroslav, I am 33 years old. I was born in Kharkiv in 1990 year. I moved to
+							Bulgaria when I was 4
+							years old and lived there until I was 11 years. then I returned to Ukraine and was forced to repeat
+							the year of school,
+							because of the language barrier. <br>
+											<!-- Кнопка -->
+							<button class="button">
+								<a href="indeх2p.html" class="link">Page2</a>
+							</button>
+						</div>
 					</div>
 				</div>
-				<!-- Перечень -->
-				<content class="content">
-					<div class="content__title">
-						<H2>My jobs</H2>
-						<div class="content__list jobs">
-
-							<ul>
-								<li>Подсобный рабочий (строительство)</li>
-								<li>Менеджер кинотеатра "Познань" 2016-2018</li>
-								<li>Помощник Ювелира</li>
-								<li></li>
-								<li></li>
-								<li></li>
-								<li></li>
-							</ul>
-						</div>
-					</div>
-
-					<div class="content-hobby">
-						<div class="content-hobby__title">
-							<H2>My hobbies</H2>
-							<div class="content-hobby__list jobs">
-
-								<ul>
-									<li></li>
-									<li></li>
-									<li></li>
-									<li></li>
-									<li></li>
-									<li></li>
-								</ul>
-							</div>
-						</div>
-					</div>
-					<div class="content-skills">
-						<div class="content-skills__title">
-							<H2>My hobbies</H2>
-							<div class="content-skills__list jobs">
-
-								<ul>
-									<li></li>
-									<li></li>
-									<li></li>
-									<li></li>
-									<li></li>
-									<li></li>
-								</ul>
-							</div>
-						</div>
-					</div>
 			</main>
-			<footer>
-
+			<footer class="footer">
+				All rights reserved&#169
 			</footer>
+			</div>
 		</div>
-	</div>
+	
+	
 </body>
 
 </html>

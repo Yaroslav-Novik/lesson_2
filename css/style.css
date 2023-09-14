@@ -1,0 +1,333 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300;500&family=Rubik+Marker+Hatch&display=swap");
+/*Обнуление*/
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+
+*,
+*:before,
+*:after {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+:focus,
+:active {
+  outline: none;
+}
+
+a:focus,
+a:active {
+  outline: none;
+}
+
+nav,
+footer,
+header,
+aside {
+  display: block;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+  font-size: 100%;
+  line-height: 1;
+  font-size: 14px;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+
+input,
+button,
+textarea {
+  font-family: inherit;
+}
+
+input::-ms-clear {
+  display: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+
+a,
+a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+ul li {
+  list-style: none;
+}
+
+img {
+  vertical-align: top;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: inherit;
+  font-weight: inherit;
+}
+
+/*--------------------*/
+body {
+  background: url(/img/wpapers_ru_Горы-у-озера.jpg);
+  height: 100%;
+}
+
+.wrapper {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  min-height: 100%;
+  overflow-x: hidden;
+  overflow-y: hidden;
+}
+
+.sticky {
+  position: sticky;
+  max-width: 1050px;
+  margin: 0 auto;
+  top: 0;
+  font-family: "Rubik Marker Hatch";
+  background-color: rgba(38, 47, 231, 0.3);
+  color: #fff;
+  text-align: center;
+  line-height: 50px;
+  font-size: 36px;
+  font-weight: normal;
+  letter-spacing: 7px;
+  word-spacing: 20px;
+}
+
+.container {
+  max-width: 1050px;
+  margin: 0 auto;
+  background-color: rgba(200, 218, 222, 0.5);
+}
+
+h1 {
+  text-shadow: 2px 2px 6px;
+  text-align: center;
+  font-size: 34px;
+  font-weight: 600;
+  letter-spacing: 3px;
+}
+
+.my {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  font-family: "Roboto Slab", serif;
+  margin: 0px 0px 0px 0px;
+  padding: 30px 0px 20px 0px;
+}
+.my_profile-title {
+  text-align: center;
+  font-size: 34px;
+  font-weight: 600;
+  letter-spacing: 3px;
+}
+.my__profile-body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 10px;
+  padding: 20px 0px 0px 0px;
+}
+.my__profile-img {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 1 50%;
+          flex: 0 1 50%;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.my__profile-img img {
+  border-radius: 20px;
+  height: 700px;
+  margin: 15px 0px 0px 0px;
+}
+.my__profile-text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 50%;
+          flex: 0 0 50%;
+  -moz-text-align-last: center;
+       text-align-last: center;
+  font-size: 24px;
+  font-weight: 350;
+  color: rgb(20, 20, 15);
+  padding: 20px 20px 0px 0px;
+}
+.my__profile-text:last-child {
+  gap: 60px;
+}
+.my__profile-text H2 {
+  font-size: 28px;
+  font-weight: 650;
+  padding: 0px 20px 10px 0px;
+  letter-spacing: 2px;
+}
+
+.button {
+  height: 30px;
+  width: 150px;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  font-size: 22px;
+  color: rgb(43, 79, 43);
+  -webkit-box-shadow: 4px 4px 4px;
+          box-shadow: 4px 4px 4px;
+  text-decoration: none;
+  color: #155111;
+}
+.button a {
+  text-decoration: none;
+  color: #196b13;
+}
+
+.content {
+  padding: 0px 0px 0px 0px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.content__title {
+  padding: 30px 0px 0px 0px;
+}
+.content__title h2 {
+  text-shadow: 2px 2px 4px;
+  font-size: 28px;
+  font-weight: 550;
+  letter-spacing: 2px;
+  text-align: center;
+}
+.content__list li {
+  font-style: italic;
+  font-size: 22px;
+  padding: 20px 0px 0px 0px;
+}
+.content__list li:last-child {
+  padding: 20px 0px 30px 0px;
+}
+.content__list li::before {
+  content: "";
+  display: inline-block;
+  top: 0px;
+  left: 0px;
+  height: 15px;
+  width: 15px;
+  background-color: rgb(41, 135, 144);
+  border-radius: 50%;
+  border: 4px solid white;
+  margin: 0px 10px 0px 0px;
+}
+
+.content-hobby__title h2 {
+  text-shadow: 2px 2px 4px;
+  font-size: 28px;
+  font-weight: 550;
+  letter-spacing: 2px;
+  text-align: center;
+}
+.content-hobby__list li {
+  font-style: italic;
+  font-size: 22px;
+  padding: 20px 0px 0px 0px;
+}
+.content-hobby__list li:last-child {
+  padding: 20px 0px 30px 0px;
+}
+.content-hobby__list li::before {
+  content: "";
+  display: inline-block;
+  top: 0px;
+  left: 0px;
+  height: 15px;
+  width: 15px;
+  background-color: rgb(41, 135, 144);
+  border-radius: 50%;
+  border: 4px solid white;
+  margin: 0px 10px 0px 0px;
+}
+
+.content-skills__title h2 {
+  text-shadow: 2px 2px 4px;
+  font-size: 28px;
+  font-weight: 550;
+  letter-spacing: 2px;
+  text-align: center;
+}
+.content-skills__list li {
+  font-style: italic;
+  font-size: 22px;
+  padding: 20px 0px 0px 0px;
+}
+.content-skills__list li::before {
+  content: "";
+  display: inline-block;
+  top: 0px;
+  left: 0px;
+  height: 15px;
+  width: 15px;
+  background-color: rgb(41, 135, 144);
+  border-radius: 50%;
+  border: 4px solid white;
+  margin: 0px 10px 0px 0px;
+}
+
+.footer {
+  font-family: "Rubik Marker Hatch";
+  background-color: rgba(38, 47, 231, 0.3);
+  color: #fff;
+  text-align: center;
+  line-height: 50px;
+  font-size: 36px;
+  font-weight: normal;
+  letter-spacing: 7px;
+  word-spacing: 20px;
+}
