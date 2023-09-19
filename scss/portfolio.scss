@@ -1,0 +1,47 @@
+@use "nullstyle";
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300;500&family=Rubik+Marker+Hatch&display=swap");
+
+body {
+	background: url(/img/wpapers_ru_Горы-у-озера.jpg);
+}  
+//!----------------------------Липкий Хедер-----------------------------//
+.sticky {
+	position: sticky;
+	max-width: 1050px;
+	margin: 0 auto;
+	top: 0;
+	font-family: "Rubik Marker Hatch";
+	background-color: rgba(38, 47, 231, 0.3);
+	color: #fff;
+	text-align: center;
+	line-height: 50px;
+	font-size: 36px;
+	font-weight: normal;
+	letter-spacing: 7px;
+	word-spacing: 20px;
+}
+//!-------------------------------Оболочкка------------------------------------//
+.wrapper {
+	display: flex;
+	flex-direction: column;
+	min-height: 100%;
+	overflow:hidden;
+}
+//!---------------------------Контейнер------------------------//
+.container {
+	max-width: 1050px;
+	margin: 0 auto;
+}
+.main {flex: 1 1 auto;}
+
+.footer {
+	font-family: "Rubik Marker Hatch";
+	background-color: rgba(38, 47, 231, 0.3);
+	color: #fff;
+	text-align: center;
+	line-height: 50px;
+	font-size: 36px;
+	font-weight: normal;
+	letter-spacing: 7px;
+	word-spacing: 20px;
+}

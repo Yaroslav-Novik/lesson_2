@@ -10,6 +10,7 @@
 *,
 *:before,
 *:after {
+  -webkit-box-sizing: border-box;
   box-sizing: border-box;
 }
 
@@ -95,8 +96,13 @@ body {
 }
 
 .wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   min-height: 100%;
   overflow-x: hidden;
   overflow-y: hidden;
@@ -124,6 +130,12 @@ body {
   background-color: rgba(200, 218, 222, 0.5);
 }
 
+[class*=__container] {
+  width: 1050px;
+  margin: 0 auto;
+  padding: 0px 15px;
+}
+
 h1 {
   text-shadow: 2px 2px 6px;
   text-align: center;
@@ -133,8 +145,13 @@ h1 {
 }
 
 .my {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   font-family: "Roboto Slab", serif;
   margin: 0px 0px 70px 0px;
   padding: 30px 0px 20px 0px;
@@ -146,13 +163,19 @@ h1 {
   letter-spacing: 3px;
 }
 .my__profile-body {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   gap: 10px;
   padding: 20px 0px 0px 0px;
 }
 .my__profile-img {
-  flex: 0 1 50%;
-  justify-content: center;
+  -webkit-box-flex: 0;
+      -ms-flex: 0 1 50%;
+          flex: 0 1 50%;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 .my__profile-img img {
   border-radius: 20px;
@@ -160,10 +183,17 @@ h1 {
   margin: 20px 0px 0px 40px;
 }
 .my__profile-text {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
-  flex: 0 0 50%;
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 50%;
+          flex: 0 0 50%;
   -moz-text-align-last: center;
        text-align-last: center;
   font-size: 24px;
@@ -185,24 +215,45 @@ h1 {
 .button {
   height: 30px;
   width: 150px;
-  align-self: center;
-  justify-content: flex-end;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
   font-size: 22px;
   color: rgb(43, 79, 43);
-  box-shadow: 4px 4px 4px;
+  -webkit-box-shadow: 4px 4px 4px;
+          box-shadow: 4px 4px 4px;
   text-decoration: none;
+  cursor: pointer;
   color: #155111;
+}
+.button:hover {
+  background-color: rgb(10, 10, 80);
+  color: #000;
 }
 .button a {
   text-decoration: none;
   color: #196b13;
 }
+.button a:hover {
+  background-color: rgb(10, 10, 80);
+  color: #ffffff;
+}
 
 .content {
   padding: 0px 0px 0px 0px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
-  justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 .content__title {
   padding: 30px 0px 0px 0px;
@@ -285,7 +336,7 @@ h1 {
   background-color: rgb(41, 135, 144);
   border-radius: 50%;
   border: 4px solid white;
-  margin: 0px 10px 0px 0px;
+  margin: 0px 10px 0px 1px;
 }
 
 .footer {
@@ -298,4 +349,16 @@ h1 {
   font-weight: normal;
   letter-spacing: 7px;
   word-spacing: 20px;
+}
+
+.portfolio {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 1 auto;
+          flex: 0 1 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
