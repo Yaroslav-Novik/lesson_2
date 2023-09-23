@@ -36,9 +36,7 @@ li {
 li:last-child {
 	margin: 0px 0px 20px 0px;
 }
- {
-	text-align: center;
-}
+
 //!-----------------------------Звертання до преліку тегів------------------------------//
 div,
 p {
@@ -155,9 +153,7 @@ div[class|="declaration"] {
 .independence {
 }
 
-.independece-link {
-	margin-bottom: 30px;
-}
+.independece-link {margin-bottom: 30px;}
 .flex-independece {
 	display: flex;
 	flex-direction: column;
